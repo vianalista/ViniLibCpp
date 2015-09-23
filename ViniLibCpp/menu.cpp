@@ -4,9 +4,10 @@
  *
  * Created on 23 de Setembro de 2015, 10:41
  */
-#include <cstdlib>
+
 #include <iostream>
 #include "menu.h"
+#include "OverloadedFunction.h"
 
 using namespace std;
 
@@ -20,7 +21,7 @@ void Menu(void) {
 
         switch (select) {
             case 1:
-                cout << "1. \n";
+                ExampleOverloadedFunction();
                 break;
             case 2:
                 cout << "2. \n";
@@ -51,7 +52,7 @@ void ShowMenu(void)
     cout << "_______________________________________________________________________________\n";
     cout << "| Enter number your select and press [return] [ENTER]:                         |\n";
     cout << " ------------------------------------------------------------------------------\n";
-    cout << " [1] - Test Loop.\n";
+    cout << " [1] - Example Overloaded Function.\n";
     cout << " [2] - Test class function.\n";
     cout << " [3] - Test virtual function.\n";
     cout << " [4] - Test thread.\n";
