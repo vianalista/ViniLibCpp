@@ -8,6 +8,7 @@
 #include <iostream>
 #include "menu.h"
 #include "OverloadedFunction.h"
+#include "RecursiveFunction.h"
 
 using namespace std;
 
@@ -24,7 +25,7 @@ void Menu(void) {
                 ExampleOverloadedFunction();
                 break;
             case 2:
-                cout << "2. \n";
+                ExampleRecursiveFunction();
                 break;
             case 3:
                 cout << "3. \n";
@@ -53,7 +54,7 @@ void ShowMenu(void)
     cout << "| Enter number your select and press [return] [ENTER]:                         |\n";
     cout << " ------------------------------------------------------------------------------\n";
     cout << " [1] - Example Overloaded Function.\n";
-    cout << " [2] - Test class function.\n";
+    cout << " [2] - Example Recursive Function.\n";
     cout << " [3] - Test virtual function.\n";
     cout << " [4] - Test thread.\n";
     cout << " [E] - Exit program.\n";
