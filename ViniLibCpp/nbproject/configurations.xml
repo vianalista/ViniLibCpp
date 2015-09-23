@@ -4,11 +4,13 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Arquivos de Cabeçalho"
                    projectFiles="true">
+      <itemPath>OverloadedFunction.h</itemPath>
       <itemPath>menu.h</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Arquivos de Código-Fonte"
                    projectFiles="true">
+      <itemPath>OverloadedFunction.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
       <itemPath>menu.cpp</itemPath>
     </logicalFolder>
@@ -38,6 +40,10 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="OverloadedFunction.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="OverloadedFunction.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="menu.cpp" ex="false" tool="1" flavor2="0">
@@ -65,6 +71,10 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="OverloadedFunction.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="OverloadedFunction.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="menu.cpp" ex="false" tool="1" flavor2="0">
