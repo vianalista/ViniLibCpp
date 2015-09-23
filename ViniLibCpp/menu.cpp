@@ -11,6 +11,7 @@
 #include "RecursiveFunction.h"
 #include "PointerToFunction.h"
 #include "AllocArray.h"
+#include "Classes.h"
 
 using namespace std;
 
@@ -36,7 +37,7 @@ void Menu(void) {
                 ExampleAllocArray();
                 break;
             case 5:
-                cout << "5. \n";
+                ExampleClassStatic();
                 break;
             case 'E':
                 cout << "Exiting ... \n";
@@ -59,6 +60,7 @@ void ShowMenu(void)
     cout << " [2] - Example Recursive Function.\n";
     cout << " [3] - ExamplePointerToFunction.\n";
     cout << " [4] - Example Alloc Array.\n";
+    cout << " [5] - Example Class Static.\n";
     cout << " [E] - Exit program.\n";
     cout << "_______________________________________________________________________________\n";
 }

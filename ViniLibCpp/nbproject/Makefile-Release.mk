@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/AllocArray.o \
+	${OBJECTDIR}/Classes.o \
 	${OBJECTDIR}/OverloadedFunction.o \
 	${OBJECTDIR}/PointerToFunction.o \
 	${OBJECTDIR}/RecursiveFunction.o \
@@ -71,6 +72,11 @@ ${OBJECTDIR}/AllocArray.o: AllocArray.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/AllocArray.o AllocArray.cpp
+
+${OBJECTDIR}/Classes.o: Classes.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Classes.o Classes.cpp
 
 ${OBJECTDIR}/OverloadedFunction.o: OverloadedFunction.cpp 
 	${MKDIR} -p ${OBJECTDIR}
