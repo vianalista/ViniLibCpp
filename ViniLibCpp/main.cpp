@@ -7,6 +7,7 @@
 
 #include <cstdlib>
 #include <iostream>
+#include "menu.h"
 
 using namespace std;
 
@@ -16,6 +17,8 @@ using namespace std;
 int main(int argc, char** argv) {
     cout << "===  Project ViniLibCpp  ===" << endl;
     cout << "=== Start call librarys  ===" << endl;
+    
+    Menu();
     
     cout << "===  End call librarys   ===" << endl;
     return 0;
