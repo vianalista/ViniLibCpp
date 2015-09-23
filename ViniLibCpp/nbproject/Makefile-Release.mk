@@ -38,6 +38,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/AllocArray.o \
 	${OBJECTDIR}/Classes.o \
 	${OBJECTDIR}/OverloadedFunction.o \
+	${OBJECTDIR}/ParamDefaultValue.o \
 	${OBJECTDIR}/PointerToFunction.o \
 	${OBJECTDIR}/RecursiveFunction.o \
 	${OBJECTDIR}/main.o \
@@ -82,6 +83,11 @@ ${OBJECTDIR}/OverloadedFunction.o: OverloadedFunction.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/OverloadedFunction.o OverloadedFunction.cpp
+
+${OBJECTDIR}/ParamDefaultValue.o: ParamDefaultValue.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ParamDefaultValue.o ParamDefaultValue.cpp
 
 ${OBJECTDIR}/PointerToFunction.o: PointerToFunction.cpp 
 	${MKDIR} -p ${OBJECTDIR}

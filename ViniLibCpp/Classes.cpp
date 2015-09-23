@@ -12,19 +12,39 @@ using namespace std;
 class CRectangle {
     //[private] is the default value.
     int _height, _side;
-    
+
 public:
-    void SetSize(int, int);
-    int area() {return (_height * _side);}
+    CRectangle(int, int);
+    void SetSize(int height, int side);
+
+    int area() {
+        return (_height * _side);
+    }
 };
 
-void ExampleClassStatic(){
-    CRectangle object1;
+void ExampleClassStatic() {
+    CRectangle object1(0, 0);
     object1.SetSize(2, 4);
     cout << " + Area: [" << object1.area() << "].\n";
 }
 
-void CRectangle::SetSize(int height, int side){
+/**
+ *  Constructor function have the same class name,
+ * and cannot have any return type; not even void.
+ */
+CRectangle::CRectangle(int startHeight, int startSide) {
+    cout << " + Constructor of CRectangle() startHeight and startSide = " << startHeight << " - " << startSide << endl;
+    _height = startHeight;
+    _side = startSide;
+}
+
+/**
+ * Example of the default value of params. int height = 0.
+ * if a value is specified this default value is ignored
+ * @param height
+ * @param side
+ */
+void CRectangle::SetSize(int height, int side) {
     _height = height;
     _side = side;
 }

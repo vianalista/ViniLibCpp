@@ -12,6 +12,7 @@
 #include "PointerToFunction.h"
 #include "AllocArray.h"
 #include "Classes.h"
+#include "ParamDefaultValue.h"
 
 using namespace std;
 
@@ -21,7 +22,9 @@ void Menu(void) {
     while (select != 'E') {
         
         ShowMenu();
+        cout << " ==> ";
         cin >> select;
+        cout << "\n_______________________________________________________________________________\n";
 
         switch (select) {
             case 1:
@@ -38,6 +41,9 @@ void Menu(void) {
                 break;
             case 5:
                 ExampleClassStatic();
+                break;
+            case 6:
+                ExampleParamDefault();
                 break;
             case 'E':
                 cout << "Exiting ... \n";
@@ -61,6 +67,7 @@ void ShowMenu(void)
     cout << " [3] - ExamplePointerToFunction.\n";
     cout << " [4] - Example Alloc Array.\n";
     cout << " [5] - Example Class Static.\n";
+    cout << " [6] - ExampleParamDefault.\n";
     cout << " [E] - Exit program.\n";
     cout << "_______________________________________________________________________________\n";
 }
