@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/OverloadedFunction.o \
+	${OBJECTDIR}/PointerToFunction.o \
 	${OBJECTDIR}/RecursiveFunction.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/menu.o
@@ -69,6 +70,11 @@ ${OBJECTDIR}/OverloadedFunction.o: OverloadedFunction.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/OverloadedFunction.o OverloadedFunction.cpp
+
+${OBJECTDIR}/PointerToFunction.o: PointerToFunction.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PointerToFunction.o PointerToFunction.cpp
 
 ${OBJECTDIR}/RecursiveFunction.o: RecursiveFunction.cpp 
 	${MKDIR} -p ${OBJECTDIR}

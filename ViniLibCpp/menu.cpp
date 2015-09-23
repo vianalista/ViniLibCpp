@@ -9,6 +9,7 @@
 #include "menu.h"
 #include "OverloadedFunction.h"
 #include "RecursiveFunction.h"
+#include "PointerToFunction.h"
 
 using namespace std;
 
@@ -28,7 +29,7 @@ void Menu(void) {
                 ExampleRecursiveFunction();
                 break;
             case 3:
-                cout << "3. \n";
+                ExamplePointerToFunction();
                 break;
             case 4:
                 cout << "4. \n";
@@ -55,7 +56,7 @@ void ShowMenu(void)
     cout << " ------------------------------------------------------------------------------\n";
     cout << " [1] - Example Overloaded Function.\n";
     cout << " [2] - Example Recursive Function.\n";
-    cout << " [3] - Test virtual function.\n";
+    cout << " [3] - ExamplePointerToFunction.\n";
     cout << " [4] - Test thread.\n";
     cout << " [E] - Exit program.\n";
     cout << "_______________________________________________________________________________\n";
