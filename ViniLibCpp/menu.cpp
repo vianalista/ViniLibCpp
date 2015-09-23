@@ -10,6 +10,7 @@
 #include "OverloadedFunction.h"
 #include "RecursiveFunction.h"
 #include "PointerToFunction.h"
+#include "AllocArray.h"
 
 using namespace std;
 
@@ -32,7 +33,7 @@ void Menu(void) {
                 ExamplePointerToFunction();
                 break;
             case 4:
-                cout << "4. \n";
+                ExampleAllocArray();
                 break;
             case 5:
                 cout << "5. \n";
@@ -57,7 +58,7 @@ void ShowMenu(void)
     cout << " [1] - Example Overloaded Function.\n";
     cout << " [2] - Example Recursive Function.\n";
     cout << " [3] - ExamplePointerToFunction.\n";
-    cout << " [4] - Test thread.\n";
+    cout << " [4] - Example Alloc Array.\n";
     cout << " [E] - Exit program.\n";
     cout << "_______________________________________________________________________________\n";
 }

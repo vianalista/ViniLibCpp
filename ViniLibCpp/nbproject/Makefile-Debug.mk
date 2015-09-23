@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/AllocArray.o \
 	${OBJECTDIR}/OverloadedFunction.o \
 	${OBJECTDIR}/PointerToFunction.o \
 	${OBJECTDIR}/RecursiveFunction.o \
@@ -65,6 +66,11 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/vinilibcpp: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/vinilibcpp ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/AllocArray.o: AllocArray.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/AllocArray.o AllocArray.cpp
 
 ${OBJECTDIR}/OverloadedFunction.o: OverloadedFunction.cpp 
 	${MKDIR} -p ${OBJECTDIR}
