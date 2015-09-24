@@ -9,6 +9,7 @@
 #define	PARAMDEFAULTVALUE_H
 
 void ExampleParamDefault(void);
+int Division(int dividend, int divisor = 2);
 
 #endif	/* PARAMDEFAULTVALUE_H */
 

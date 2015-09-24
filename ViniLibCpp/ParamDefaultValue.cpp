@@ -1,13 +1,8 @@
 // default values in functions
 #include <iostream>
+#include "ParamDefaultValue.h"
 
 using namespace std;
-
-int divide(int a, int b = 2) {
-    int r;
-    r = a / b;
-    return (r);
-}
 
 /**
  * Example of the default value of params. int height = 0.
@@ -16,6 +11,12 @@ int divide(int a, int b = 2) {
 void ExampleParamDefault(void) {
     cout << " + Test ExampleParamDefault - Default value param" << endl;
 
-    cout << divide(20) << endl;
-    cout << divide(20, 4) << endl;
+    cout << Division(20) << endl; //The second param is set as default, See declaration function in (.h) header file.)
+    cout << Division(20, 4) << endl;
+}
+
+int Division(int dividend, int divisor) {
+    int output;
+    output = dividend / divisor;
+    return output;
 }
