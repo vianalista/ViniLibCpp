@@ -17,6 +17,7 @@
 #include "OverloadingConstructors.h"
 #include "PointerToClasses.h"
 #include "AllocatedObjects-Quantity.h"
+#include "FriendFunctions.h"
 
 using namespace std;
 
@@ -64,6 +65,10 @@ void Menu(void) {
             case 11:
                 ExampleAllocatedObjectsVerify();
                 break;
+             case 12:
+                ExampleFriendFunction();
+                break;               
+                
             case 'E':
                 cout << "Exiting ... \n";
                 sleep(2);
@@ -91,6 +96,7 @@ void ShowMenu(void) {
     cout << " [9] - Example Pointer To Classes.\n";
     cout << " [10] - Example counter Quantity Allocated Objects.\n";
     cout << " [11] - Example Verify if exist Allocated Objects.\n";
+    cout << " [12] - Example Friend Function.\n";
 
     cout << " [E] - Exit program.\n";
     cout << "_______________________________________________________________________________\n";

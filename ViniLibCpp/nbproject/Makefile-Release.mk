@@ -39,6 +39,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/AllocatedObjects-Quantity.o \
 	${OBJECTDIR}/Classes.o \
 	${OBJECTDIR}/ClassesDestructor.o \
+	${OBJECTDIR}/FriendFunctions.o \
 	${OBJECTDIR}/OverloadedFunction.o \
 	${OBJECTDIR}/OverloadingConstructors.o \
 	${OBJECTDIR}/ParamDefaultValue.o \
@@ -92,6 +93,11 @@ ${OBJECTDIR}/ClassesDestructor.o: ClassesDestructor.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ClassesDestructor.o ClassesDestructor.cpp
+
+${OBJECTDIR}/FriendFunctions.o: FriendFunctions.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/FriendFunctions.o FriendFunctions.cpp
 
 ${OBJECTDIR}/OverloadedFunction.o: OverloadedFunction.cpp 
 	${MKDIR} -p ${OBJECTDIR}
