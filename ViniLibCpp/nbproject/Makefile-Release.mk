@@ -37,6 +37,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/AllocArray.o \
 	${OBJECTDIR}/Classes.o \
+	${OBJECTDIR}/ClassesDestructor.o \
 	${OBJECTDIR}/OverloadedFunction.o \
 	${OBJECTDIR}/ParamDefaultValue.o \
 	${OBJECTDIR}/PointerToFunction.o \
@@ -78,6 +79,11 @@ ${OBJECTDIR}/Classes.o: Classes.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Classes.o Classes.cpp
+
+${OBJECTDIR}/ClassesDestructor.o: ClassesDestructor.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ClassesDestructor.o ClassesDestructor.cpp
 
 ${OBJECTDIR}/OverloadedFunction.o: OverloadedFunction.cpp 
 	${MKDIR} -p ${OBJECTDIR}

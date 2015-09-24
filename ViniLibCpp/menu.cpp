@@ -13,6 +13,7 @@
 #include "AllocArray.h"
 #include "Classes.h"
 #include "ParamDefaultValue.h"
+#include "ClassesDestructor.h"
 
 using namespace std;
 
@@ -43,6 +44,9 @@ void Menu(void) {
                 ExampleClassStatic();
                 break;
             case 6:
+                ExampleClassDynamic();
+                break;
+            case 7:
                 ExampleParamDefault();
                 break;
             case 'E':
@@ -67,7 +71,8 @@ void ShowMenu(void)
     cout << " [3] - ExamplePointerToFunction.\n";
     cout << " [4] - Example Alloc Array.\n";
     cout << " [5] - Example Class Static.\n";
-    cout << " [6] - ExampleParamDefault.\n";
+    cout << " [5] - Example Class Dynamic.\n";
+    cout << " [7] - ExampleParamDefault.\n";
     cout << " [E] - Exit program.\n";
     cout << "_______________________________________________________________________________\n";
 }
