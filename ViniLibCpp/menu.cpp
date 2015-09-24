@@ -14,6 +14,8 @@
 #include "Classes.h"
 #include "ParamDefaultValue.h"
 #include "ClassesDestructor.h"
+#include "OverloadingConstructors.h"
+#include "PointerToClasses.h"
 
 using namespace std;
 
@@ -49,6 +51,12 @@ void Menu(void) {
             case 7:
                 ExampleParamDefault();
                 break;
+            case 8:
+                ExampleOverloadingConstructor();
+                break;            
+            case 9:
+                ExamplePointerToClasses();
+                break;
             case 'E':
                 cout << "Exiting ... \n";
                 sleep(2);
@@ -68,11 +76,13 @@ void ShowMenu(void)
     cout << " ------------------------------------------------------------------------------\n";
     cout << " [1] - Example Overloaded Function.\n";
     cout << " [2] - Example Recursive Function.\n";
-    cout << " [3] - ExamplePointerToFunction.\n";
+    cout << " [3] - Example Pointer To Function.\n";
     cout << " [4] - Example Alloc Array.\n";
-    cout << " [5] - Example Class Static.\n";
-    cout << " [5] - Example Class Dynamic.\n";
-    cout << " [7] - ExampleParamDefault.\n";
+    cout << " [5] - Example Class - Static.\n";
+    cout << " [6] - Example Class - Dynamic.\n";
+    cout << " [7] - Example Default Param.\n";
+    cout << " [8] - Example Overloading Constructor.\n";
+    cout << " [9] - Example Pointer To Classes.\n";
     cout << " [E] - Exit program.\n";
     cout << "_______________________________________________________________________________\n";
 }

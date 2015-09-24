@@ -39,7 +39,9 @@ OBJECTFILES= \
 	${OBJECTDIR}/Classes.o \
 	${OBJECTDIR}/ClassesDestructor.o \
 	${OBJECTDIR}/OverloadedFunction.o \
+	${OBJECTDIR}/OverloadingConstructors.o \
 	${OBJECTDIR}/ParamDefaultValue.o \
+	${OBJECTDIR}/PointerToClasses.o \
 	${OBJECTDIR}/PointerToFunction.o \
 	${OBJECTDIR}/RecursiveFunction.o \
 	${OBJECTDIR}/main.o \
@@ -90,10 +92,20 @@ ${OBJECTDIR}/OverloadedFunction.o: OverloadedFunction.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/OverloadedFunction.o OverloadedFunction.cpp
 
+${OBJECTDIR}/OverloadingConstructors.o: OverloadingConstructors.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/OverloadingConstructors.o OverloadingConstructors.cpp
+
 ${OBJECTDIR}/ParamDefaultValue.o: ParamDefaultValue.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ParamDefaultValue.o ParamDefaultValue.cpp
+
+${OBJECTDIR}/PointerToClasses.o: PointerToClasses.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PointerToClasses.o PointerToClasses.cpp
 
 ${OBJECTDIR}/PointerToFunction.o: PointerToFunction.cpp 
 	${MKDIR} -p ${OBJECTDIR}

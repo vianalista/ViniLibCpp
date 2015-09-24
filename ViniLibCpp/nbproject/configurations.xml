@@ -8,7 +8,9 @@
       <itemPath>Classes.h</itemPath>
       <itemPath>ClassesDestructor.h</itemPath>
       <itemPath>OverloadedFunction.h</itemPath>
+      <itemPath>OverloadingConstructors.h</itemPath>
       <itemPath>ParamDefaultValue.h</itemPath>
+      <itemPath>PointerToClasses.h</itemPath>
       <itemPath>PointerToFunction.h</itemPath>
       <itemPath>RecursiveFunction.h</itemPath>
       <itemPath>menu.h</itemPath>
@@ -20,7 +22,9 @@
       <itemPath>Classes.cpp</itemPath>
       <itemPath>ClassesDestructor.cpp</itemPath>
       <itemPath>OverloadedFunction.cpp</itemPath>
+      <itemPath>OverloadingConstructors.cpp</itemPath>
       <itemPath>ParamDefaultValue.cpp</itemPath>
+      <itemPath>PointerToClasses.cpp</itemPath>
       <itemPath>PointerToFunction.cpp</itemPath>
       <itemPath>RecursiveFunction.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
@@ -68,9 +72,17 @@
       </item>
       <item path="OverloadedFunction.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="OverloadingConstructors.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="OverloadingConstructors.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="ParamDefaultValue.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ParamDefaultValue.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PointerToClasses.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PointerToClasses.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="PointerToFunction.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -123,9 +135,17 @@
       </item>
       <item path="OverloadedFunction.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="OverloadingConstructors.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="OverloadingConstructors.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="ParamDefaultValue.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ParamDefaultValue.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PointerToClasses.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PointerToClasses.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="PointerToFunction.cpp" ex="false" tool="1" flavor2="0">
       </item>
