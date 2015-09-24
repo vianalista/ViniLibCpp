@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/AllocArray.o \
+	${OBJECTDIR}/AllocatedObjects-Quantity.o \
 	${OBJECTDIR}/Classes.o \
 	${OBJECTDIR}/ClassesDestructor.o \
 	${OBJECTDIR}/OverloadedFunction.o \
@@ -76,6 +77,11 @@ ${OBJECTDIR}/AllocArray.o: AllocArray.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/AllocArray.o AllocArray.cpp
+
+${OBJECTDIR}/AllocatedObjects-Quantity.o: AllocatedObjects-Quantity.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/AllocatedObjects-Quantity.o AllocatedObjects-Quantity.cpp
 
 ${OBJECTDIR}/Classes.o: Classes.cpp 
 	${MKDIR} -p ${OBJECTDIR}

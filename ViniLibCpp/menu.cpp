@@ -16,6 +16,7 @@
 #include "ClassesDestructor.h"
 #include "OverloadingConstructors.h"
 #include "PointerToClasses.h"
+#include "AllocatedObjects-Quantity.h"
 
 using namespace std;
 
@@ -23,7 +24,7 @@ void Menu(void) {
     int select = 0;
 
     while (select != 'E') {
-        
+
         ShowMenu();
         cout << " ==> ";
         cin >> select;
@@ -53,9 +54,15 @@ void Menu(void) {
                 break;
             case 8:
                 ExampleOverloadingConstructor();
-                break;            
+                break;
             case 9:
                 ExamplePointerToClasses();
+                break;
+            case 10:
+                ExampleAllocatedObjectsQuantity();
+                break;
+            case 11:
+                ExampleAllocatedObjectsVerify();
                 break;
             case 'E':
                 cout << "Exiting ... \n";
@@ -69,8 +76,7 @@ void Menu(void) {
     }
 }
 
-void ShowMenu(void)
-{
+void ShowMenu(void) {
     cout << "_______________________________________________________________________________\n";
     cout << "| Enter number your select and press [return] [ENTER]:                         |\n";
     cout << " ------------------------------------------------------------------------------\n";
@@ -83,6 +89,9 @@ void ShowMenu(void)
     cout << " [7] - Example Default Param.\n";
     cout << " [8] - Example Overloading Constructor.\n";
     cout << " [9] - Example Pointer To Classes.\n";
+    cout << " [10] - Example counter Quantity Allocated Objects.\n";
+    cout << " [11] - Example Verify if exist Allocated Objects.\n";
+
     cout << " [E] - Exit program.\n";
     cout << "_______________________________________________________________________________\n";
 }

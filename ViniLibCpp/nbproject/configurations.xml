@@ -5,6 +5,7 @@
                    displayName="Arquivos de Cabeçalho"
                    projectFiles="true">
       <itemPath>AllocArray.h</itemPath>
+      <itemPath>AllocatedObjects-Quantity.h</itemPath>
       <itemPath>Classes.h</itemPath>
       <itemPath>ClassesDestructor.h</itemPath>
       <itemPath>OverloadedFunction.h</itemPath>
@@ -19,6 +20,7 @@
                    displayName="Arquivos de Código-Fonte"
                    projectFiles="true">
       <itemPath>AllocArray.cpp</itemPath>
+      <itemPath>AllocatedObjects-Quantity.cpp</itemPath>
       <itemPath>Classes.cpp</itemPath>
       <itemPath>ClassesDestructor.cpp</itemPath>
       <itemPath>OverloadedFunction.cpp</itemPath>
@@ -59,6 +61,10 @@
       <item path="AllocArray.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="AllocArray.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AllocatedObjects-Quantity.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AllocatedObjects-Quantity.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Classes.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -122,6 +128,10 @@
       <item path="AllocArray.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="AllocArray.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AllocatedObjects-Quantity.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AllocatedObjects-Quantity.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Classes.cpp" ex="false" tool="1" flavor2="0">
       </item>
