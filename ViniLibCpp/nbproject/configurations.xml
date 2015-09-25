@@ -6,8 +6,10 @@
                    projectFiles="true">
       <itemPath>AllocArray.h</itemPath>
       <itemPath>AllocatedObjects-Quantity.h</itemPath>
+      <itemPath>CheckInstances.h</itemPath>
       <itemPath>Classes.h</itemPath>
       <itemPath>ClassesDestructor.h</itemPath>
+      <itemPath>FriendClasses.h</itemPath>
       <itemPath>FriendFunctions.h</itemPath>
       <itemPath>OverloadedFunction.h</itemPath>
       <itemPath>OverloadingConstructors.h</itemPath>
@@ -22,8 +24,10 @@
                    projectFiles="true">
       <itemPath>AllocArray.cpp</itemPath>
       <itemPath>AllocatedObjects-Quantity.cpp</itemPath>
+      <itemPath>CheckInstances.cpp</itemPath>
       <itemPath>Classes.cpp</itemPath>
       <itemPath>ClassesDestructor.cpp</itemPath>
+      <itemPath>FriendClasses.cpp</itemPath>
       <itemPath>FriendFunctions.cpp</itemPath>
       <itemPath>OverloadedFunction.cpp</itemPath>
       <itemPath>OverloadingConstructors.cpp</itemPath>
@@ -68,6 +72,10 @@
       </item>
       <item path="AllocatedObjects-Quantity.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="CheckInstances.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CheckInstances.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Classes.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Classes.h" ex="false" tool="3" flavor2="0">
@@ -75,6 +83,10 @@
       <item path="ClassesDestructor.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ClassesDestructor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="FriendClasses.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="FriendClasses.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="FriendFunctions.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -139,6 +151,10 @@
       </item>
       <item path="AllocatedObjects-Quantity.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="CheckInstances.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CheckInstances.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Classes.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Classes.h" ex="false" tool="3" flavor2="0">
@@ -146,6 +162,10 @@
       <item path="ClassesDestructor.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ClassesDestructor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="FriendClasses.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="FriendClasses.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="FriendFunctions.cpp" ex="false" tool="1" flavor2="0">
       </item>

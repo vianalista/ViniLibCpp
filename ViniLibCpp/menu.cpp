@@ -18,6 +18,7 @@
 #include "PointerToClasses.h"
 #include "AllocatedObjects-Quantity.h"
 #include "FriendFunctions.h"
+#include "FriendClasses.h"
 
 using namespace std;
 
@@ -68,6 +69,9 @@ void Menu(void) {
              case 12:
                 ExampleFriendFunction();
                 break;               
+             case 13:
+                ExampleFriendClasses();
+                break;               
                 
             case 'E':
                 cout << "Exiting ... \n";
@@ -97,6 +101,7 @@ void ShowMenu(void) {
     cout << " [10] - Example counter Quantity Allocated Objects.\n";
     cout << " [11] - Example Verify if exist Allocated Objects.\n";
     cout << " [12] - Example Friend Function.\n";
+    cout << " [13] - Example Friend Classes.\n";
 
     cout << " [E] - Exit program.\n";
     cout << "_______________________________________________________________________________\n";

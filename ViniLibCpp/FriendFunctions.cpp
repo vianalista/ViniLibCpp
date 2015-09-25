@@ -1,6 +1,6 @@
 
 #include <iostream>
-#include "AllocatedObjects-Quantity.h"
+#include "FriendFunctions.h"
 
 using namespace std;
 

@@ -10,6 +10,5 @@
 
 void ExampleFriendFunction(void);
 
-
 #endif	/* FRIENDFUNCTIONS_H */
 

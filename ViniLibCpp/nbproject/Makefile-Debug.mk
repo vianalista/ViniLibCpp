@@ -37,8 +37,10 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/AllocArray.o \
 	${OBJECTDIR}/AllocatedObjects-Quantity.o \
+	${OBJECTDIR}/CheckInstances.o \
 	${OBJECTDIR}/Classes.o \
 	${OBJECTDIR}/ClassesDestructor.o \
+	${OBJECTDIR}/FriendClasses.o \
 	${OBJECTDIR}/FriendFunctions.o \
 	${OBJECTDIR}/OverloadedFunction.o \
 	${OBJECTDIR}/OverloadingConstructors.o \
@@ -84,6 +86,11 @@ ${OBJECTDIR}/AllocatedObjects-Quantity.o: AllocatedObjects-Quantity.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/AllocatedObjects-Quantity.o AllocatedObjects-Quantity.cpp
 
+${OBJECTDIR}/CheckInstances.o: CheckInstances.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CheckInstances.o CheckInstances.cpp
+
 ${OBJECTDIR}/Classes.o: Classes.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -93,6 +100,11 @@ ${OBJECTDIR}/ClassesDestructor.o: ClassesDestructor.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ClassesDestructor.o ClassesDestructor.cpp
+
+${OBJECTDIR}/FriendClasses.o: FriendClasses.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/FriendClasses.o FriendClasses.cpp
 
 ${OBJECTDIR}/FriendFunctions.o: FriendFunctions.cpp 
 	${MKDIR} -p ${OBJECTDIR}
