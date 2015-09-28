@@ -49,7 +49,9 @@ OBJECTFILES= \
 	${OBJECTDIR}/ParamDefaultValue.o \
 	${OBJECTDIR}/PointerToClasses.o \
 	${OBJECTDIR}/PointerToFunction.o \
+	${OBJECTDIR}/Polymorphism.o \
 	${OBJECTDIR}/RecursiveFunction.o \
+	${OBJECTDIR}/VirtualMember.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/menu.o
 
@@ -148,10 +150,20 @@ ${OBJECTDIR}/PointerToFunction.o: PointerToFunction.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PointerToFunction.o PointerToFunction.cpp
 
+${OBJECTDIR}/Polymorphism.o: Polymorphism.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Polymorphism.o Polymorphism.cpp
+
 ${OBJECTDIR}/RecursiveFunction.o: RecursiveFunction.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/RecursiveFunction.o RecursiveFunction.cpp
+
+${OBJECTDIR}/VirtualMember.o: VirtualMember.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/VirtualMember.o VirtualMember.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}

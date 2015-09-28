@@ -18,7 +18,9 @@
       <itemPath>ParamDefaultValue.h</itemPath>
       <itemPath>PointerToClasses.h</itemPath>
       <itemPath>PointerToFunction.h</itemPath>
+      <itemPath>Polymorphism.h</itemPath>
       <itemPath>RecursiveFunction.h</itemPath>
+      <itemPath>VirtualMember.h</itemPath>
       <itemPath>menu.h</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
@@ -38,7 +40,9 @@
       <itemPath>ParamDefaultValue.cpp</itemPath>
       <itemPath>PointerToClasses.cpp</itemPath>
       <itemPath>PointerToFunction.cpp</itemPath>
+      <itemPath>Polymorphism.cpp</itemPath>
       <itemPath>RecursiveFunction.cpp</itemPath>
+      <itemPath>VirtualMember.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
       <itemPath>menu.cpp</itemPath>
     </logicalFolder>
@@ -124,9 +128,17 @@
       </item>
       <item path="PointerToFunction.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Polymorphism.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Polymorphism.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="RecursiveFunction.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="RecursiveFunction.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="VirtualMember.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="VirtualMember.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -211,9 +223,17 @@
       </item>
       <item path="PointerToFunction.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Polymorphism.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Polymorphism.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="RecursiveFunction.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="RecursiveFunction.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="VirtualMember.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="VirtualMember.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
