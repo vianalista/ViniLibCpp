@@ -4,6 +4,7 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Arquivos de Cabeçalho"
                    projectFiles="true">
+      <itemPath>AbstractBaseClasses.h</itemPath>
       <itemPath>AllocArray.h</itemPath>
       <itemPath>AllocatedObjects-Quantity.h</itemPath>
       <itemPath>CheckInstances.h</itemPath>
@@ -26,6 +27,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Arquivos de Código-Fonte"
                    projectFiles="true">
+      <itemPath>AbstractBaseClasses.cpp</itemPath>
       <itemPath>AllocArray.cpp</itemPath>
       <itemPath>AllocatedObjects-Quantity.cpp</itemPath>
       <itemPath>CheckInstances.cpp</itemPath>
@@ -72,6 +74,10 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="AbstractBaseClasses.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractBaseClasses.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="AllocArray.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="AllocArray.h" ex="false" tool="3" flavor2="0">
@@ -167,6 +173,10 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="AbstractBaseClasses.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractBaseClasses.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="AllocArray.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="AllocArray.h" ex="false" tool="3" flavor2="0">

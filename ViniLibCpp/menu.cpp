@@ -23,6 +23,7 @@
 #include "InheritanceConstructor.h"
 #include "Polymorphism.h"
 #include "VirtualMember.h"
+#include "AbstractBaseClasses.h"
 
 using namespace std;
 
@@ -88,6 +89,9 @@ void Menu(void) {
             case 17:
                 ExampleVirtualMember();
                 break;
+            case 18:
+                ExampleAbstractClasses();
+                break;
             case 'E':
                 cout << "Exiting ... \n";
                 sleep(2);
@@ -121,6 +125,7 @@ void ShowMenu(void) {
     cout << " [15] - Example Inheritance Constructor. \n";
     cout << " [16] - Example Polymorphism. \n";
     cout << " [17] - Example Virtual Member/function. \n";
+    cout << " [18] - Example Abstract Classes. \n";
     
     cout << " [E] - Exit program.\n";
     cout << "_______________________________________________________________________________\n";

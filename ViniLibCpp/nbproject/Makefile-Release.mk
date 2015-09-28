@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/AbstractBaseClasses.o \
 	${OBJECTDIR}/AllocArray.o \
 	${OBJECTDIR}/AllocatedObjects-Quantity.o \
 	${OBJECTDIR}/CheckInstances.o \
@@ -79,6 +80,11 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/vinilibcpp: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/vinilibcpp ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/AbstractBaseClasses.o: AbstractBaseClasses.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/AbstractBaseClasses.o AbstractBaseClasses.cpp
 
 ${OBJECTDIR}/AllocArray.o: AllocArray.cpp 
 	${MKDIR} -p ${OBJECTDIR}
