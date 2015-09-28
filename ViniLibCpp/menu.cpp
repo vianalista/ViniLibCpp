@@ -21,6 +21,7 @@
 #include "FriendClasses.h"
 #include "InheritanceClasses.h"
 #include "InheritanceConstructor.h"
+#include "Polymorphism.h"
 
 using namespace std;
 
@@ -80,6 +81,9 @@ void Menu(void) {
             case 15:
                 ExampleInheritanceConstructor();
                 break;
+            case 16:
+                ExamplePolymorphism();
+                break;
             case 'E':
                 cout << "Exiting ... \n";
                 sleep(2);
@@ -111,7 +115,7 @@ void ShowMenu(void) {
     cout << " [13] - Example Friend Classes.\n";
     cout << " [14] - Example Inheritance Classes.\n";
     cout << " [15] - Example Inheritance Constructor. \n";
-    
+    cout << " [16] - Example Polymorphism. \n";
 
     cout << " [E] - Exit program.\n";
     cout << "_______________________________________________________________________________\n";
