@@ -42,6 +42,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/ClassesDestructor.o \
 	${OBJECTDIR}/FriendClasses.o \
 	${OBJECTDIR}/FriendFunctions.o \
+	${OBJECTDIR}/InheritanceClasses.o \
+	${OBJECTDIR}/InheritanceConstructor.o \
 	${OBJECTDIR}/OverloadedFunction.o \
 	${OBJECTDIR}/OverloadingConstructors.o \
 	${OBJECTDIR}/ParamDefaultValue.o \
@@ -110,6 +112,16 @@ ${OBJECTDIR}/FriendFunctions.o: FriendFunctions.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/FriendFunctions.o FriendFunctions.cpp
+
+${OBJECTDIR}/InheritanceClasses.o: InheritanceClasses.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/InheritanceClasses.o InheritanceClasses.cpp
+
+${OBJECTDIR}/InheritanceConstructor.o: InheritanceConstructor.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/InheritanceConstructor.o InheritanceConstructor.cpp
 
 ${OBJECTDIR}/OverloadedFunction.o: OverloadedFunction.cpp 
 	${MKDIR} -p ${OBJECTDIR}

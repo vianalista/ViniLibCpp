@@ -19,6 +19,8 @@
 #include "AllocatedObjects-Quantity.h"
 #include "FriendFunctions.h"
 #include "FriendClasses.h"
+#include "InheritanceClasses.h"
+#include "InheritanceConstructor.h"
 
 using namespace std;
 
@@ -72,7 +74,12 @@ void Menu(void) {
              case 13:
                 ExampleFriendClasses();
                 break;               
-                
+             case 14:
+                ExampleInheritance();
+                break;              
+            case 15:
+                ExampleInheritanceConstructor();
+                break;
             case 'E':
                 cout << "Exiting ... \n";
                 sleep(2);
@@ -102,6 +109,9 @@ void ShowMenu(void) {
     cout << " [11] - Example Verify if exist Allocated Objects.\n";
     cout << " [12] - Example Friend Function.\n";
     cout << " [13] - Example Friend Classes.\n";
+    cout << " [14] - Example Inheritance Classes.\n";
+    cout << " [15] - Example Inheritance Constructor. \n";
+    
 
     cout << " [E] - Exit program.\n";
     cout << "_______________________________________________________________________________\n";
