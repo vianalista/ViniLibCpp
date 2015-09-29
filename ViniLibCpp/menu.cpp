@@ -25,6 +25,7 @@
 #include "VirtualMember.h"
 #include "AbstractBaseClasses.h"
 #include "TemplateFunction.h"
+#include "TemplateClass.h"
 
 using namespace std;
 
@@ -95,6 +96,9 @@ void Menu(void) {
                 break;
             case 19:
                 ExampleTemplate();
+                break;
+            case 20:
+                ExampleTemplateClass();
                 break;
             case 'E':
                 cout << "Exiting ... \n";
