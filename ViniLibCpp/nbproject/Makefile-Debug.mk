@@ -54,6 +54,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/RecursiveFunction.o \
 	${OBJECTDIR}/TemplateClass.o \
 	${OBJECTDIR}/TemplateFunction.o \
+	${OBJECTDIR}/TemplateNonType.o \
 	${OBJECTDIR}/TemplateSpecialization.o \
 	${OBJECTDIR}/VirtualMember.o \
 	${OBJECTDIR}/main.o \
@@ -178,6 +179,11 @@ ${OBJECTDIR}/TemplateFunction.o: TemplateFunction.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TemplateFunction.o TemplateFunction.cpp
+
+${OBJECTDIR}/TemplateNonType.o: TemplateNonType.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TemplateNonType.o TemplateNonType.cpp
 
 ${OBJECTDIR}/TemplateSpecialization.o: TemplateSpecialization.cpp 
 	${MKDIR} -p ${OBJECTDIR}

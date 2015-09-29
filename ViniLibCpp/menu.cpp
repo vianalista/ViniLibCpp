@@ -27,6 +27,7 @@
 #include "TemplateFunction.h"
 #include "TemplateClass.h"
 #include "TemplateSpecialization.h"
+#include "TemplateNonType.h"
 
 using namespace std;
 
@@ -104,6 +105,9 @@ void Menu(void) {
             case 21:
                 ExampleTemplateSpecialization();
                 break;
+            case 22:
+                ExampleTemplateNonType();
+                break;
             case 'E':
                 cout << "Exiting ... \n";
                 sleep(2);
@@ -141,6 +145,7 @@ void ShowMenu(void) {
     cout << " [19] - Example Template Function. \n";
     cout << " [20] - Example Template Class. \n";
     cout << " [21] - Example Template Especialization. \n";  
+    cout << " [22] - Example Template Non type. \n";
     
     cout << " [E] - Exit program.\n";
     cout << "_______________________________________________________________________________\n";
