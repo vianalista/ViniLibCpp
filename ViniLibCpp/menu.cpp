@@ -26,6 +26,7 @@
 #include "AbstractBaseClasses.h"
 #include "TemplateFunction.h"
 #include "TemplateClass.h"
+#include "TemplateSpecialization.h"
 
 using namespace std;
 
@@ -100,6 +101,9 @@ void Menu(void) {
             case 20:
                 ExampleTemplateClass();
                 break;
+            case 21:
+                ExampleTemplateSpecialization();
+                break;
             case 'E':
                 cout << "Exiting ... \n";
                 sleep(2);
@@ -134,7 +138,9 @@ void ShowMenu(void) {
     cout << " [16] - Example Polymorphism. \n";
     cout << " [17] - Example Virtual Member/function. \n";
     cout << " [18] - Example Abstract Classes. \n";
-    cout << " [19] - Example Template. \n";
+    cout << " [19] - Example Template Function. \n";
+    cout << " [20] - Example Template Class. \n";
+    cout << " [21] - Example Template Especialization. \n";  
     
     cout << " [E] - Exit program.\n";
     cout << "_______________________________________________________________________________\n";
