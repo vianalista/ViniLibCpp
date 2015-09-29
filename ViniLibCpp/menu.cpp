@@ -24,6 +24,7 @@
 #include "Polymorphism.h"
 #include "VirtualMember.h"
 #include "AbstractBaseClasses.h"
+#include "TemplateFunction.h"
 
 using namespace std;
 
@@ -92,6 +93,9 @@ void Menu(void) {
             case 18:
                 ExampleAbstractClasses();
                 break;
+            case 19:
+                ExampleTemplate();
+                break;
             case 'E':
                 cout << "Exiting ... \n";
                 sleep(2);
@@ -126,6 +130,7 @@ void ShowMenu(void) {
     cout << " [16] - Example Polymorphism. \n";
     cout << " [17] - Example Virtual Member/function. \n";
     cout << " [18] - Example Abstract Classes. \n";
+    cout << " [19] - Example Template. \n";
     
     cout << " [E] - Exit program.\n";
     cout << "_______________________________________________________________________________\n";

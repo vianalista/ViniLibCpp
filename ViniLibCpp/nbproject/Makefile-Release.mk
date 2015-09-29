@@ -52,6 +52,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/PointerToFunction.o \
 	${OBJECTDIR}/Polymorphism.o \
 	${OBJECTDIR}/RecursiveFunction.o \
+	${OBJECTDIR}/TemplateFunction.o \
 	${OBJECTDIR}/VirtualMember.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/menu.o
@@ -165,6 +166,11 @@ ${OBJECTDIR}/RecursiveFunction.o: RecursiveFunction.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/RecursiveFunction.o RecursiveFunction.cpp
+
+${OBJECTDIR}/TemplateFunction.o: TemplateFunction.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TemplateFunction.o TemplateFunction.cpp
 
 ${OBJECTDIR}/VirtualMember.o: VirtualMember.cpp 
 	${MKDIR} -p ${OBJECTDIR}
