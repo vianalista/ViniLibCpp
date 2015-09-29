@@ -1,7 +1,13 @@
 // sequence template
 #include <iostream>
+#include "TemplateNonType.h"
+
 using namespace std;
 
+/**
+ * Observation: [templates] can not to be declared in differents files. Example .cpp and .h.
+ * Because templates are compiled when required.
+ */
 template <class MutantType, int pos>
 class CTNonType {
     MutantType _array [pos];
