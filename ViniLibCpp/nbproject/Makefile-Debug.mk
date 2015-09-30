@@ -41,6 +41,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/CheckInstances.o \
 	${OBJECTDIR}/Classes.o \
 	${OBJECTDIR}/ClassesDestructor.o \
+	${OBJECTDIR}/ExceptionExample.o \
 	${OBJECTDIR}/FriendClasses.o \
 	${OBJECTDIR}/FriendFunctions.o \
 	${OBJECTDIR}/InheritanceClasses.o \
@@ -115,6 +116,11 @@ ${OBJECTDIR}/ClassesDestructor.o: ClassesDestructor.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ClassesDestructor.o ClassesDestructor.cpp
+
+${OBJECTDIR}/ExceptionExample.o: ExceptionExample.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ExceptionExample.o ExceptionExample.cpp
 
 ${OBJECTDIR}/FriendClasses.o: FriendClasses.cpp 
 	${MKDIR} -p ${OBJECTDIR}

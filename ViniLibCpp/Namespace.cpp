@@ -14,7 +14,7 @@ namespace namespaceB {
     float x = 1.321;
 }
 
-void ExampelNamespace(void) {
+void ExampleNamespace(void) {
     {
         //When without [using namespace], need call var with Name namespace plus ::"
         cout << " = namespaceA::x = " << namespaceA::x << endl;

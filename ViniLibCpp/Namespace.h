@@ -8,7 +8,7 @@
 #ifndef NAMESPACE_H
 #define	NAMESPACE_H
 
-void ExampelNamespace(void);
+void ExampleNamespace(void);
 
 #endif	/* NAMESPACE_H */
 
