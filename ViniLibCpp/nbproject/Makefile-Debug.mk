@@ -55,6 +55,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/PointerToFunction.o \
 	${OBJECTDIR}/Polymorphism.o \
 	${OBJECTDIR}/RecursiveFunction.o \
+	${OBJECTDIR}/StandardMacroNames.o \
 	${OBJECTDIR}/TemplateClass.o \
 	${OBJECTDIR}/TemplateFunction.o \
 	${OBJECTDIR}/TemplateNonType.o \
@@ -188,6 +189,11 @@ ${OBJECTDIR}/RecursiveFunction.o: RecursiveFunction.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/RecursiveFunction.o RecursiveFunction.cpp
+
+${OBJECTDIR}/StandardMacroNames.o: StandardMacroNames.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/StandardMacroNames.o StandardMacroNames.cpp
 
 ${OBJECTDIR}/TemplateClass.o: TemplateClass.cpp 
 	${MKDIR} -p ${OBJECTDIR}
