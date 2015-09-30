@@ -30,6 +30,7 @@
 #include "TemplateNonType.h"
 #include "Namespace.h"
 #include "ExceptionExample.h"
+#include "TypeCasting.h"
 
 using namespace std;
 
@@ -115,6 +116,10 @@ void Menu(void) {
                 break;
             case 24:
                 ExampleException();
+                break;
+            case 25:
+                ExampleTypeCasting();
+                break;
             case 'E':
                 cout << "Exiting ... \n";
                 sleep(2);
@@ -155,6 +160,7 @@ void ShowMenu(void) {
     cout << " [22] - Example Template Non type. \n";
     cout << " [23] - Example Namespace. \n";
     cout << " [24] - Example Exception. \n";
+    cout << " [25] - Example cast. \n";
     
     cout << " [E] - Exit program.\n";
     cout << "_______________________________________________________________________________\n";

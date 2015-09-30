@@ -58,6 +58,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/TemplateFunction.o \
 	${OBJECTDIR}/TemplateNonType.o \
 	${OBJECTDIR}/TemplateSpecialization.o \
+	${OBJECTDIR}/TypeCasting.o \
 	${OBJECTDIR}/VirtualMember.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/menu.o
@@ -201,6 +202,11 @@ ${OBJECTDIR}/TemplateSpecialization.o: TemplateSpecialization.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TemplateSpecialization.o TemplateSpecialization.cpp
+
+${OBJECTDIR}/TypeCasting.o: TypeCasting.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TypeCasting.o TypeCasting.cpp
 
 ${OBJECTDIR}/VirtualMember.o: VirtualMember.cpp 
 	${MKDIR} -p ${OBJECTDIR}
