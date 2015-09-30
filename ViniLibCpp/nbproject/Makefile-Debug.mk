@@ -45,6 +45,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/FriendFunctions.o \
 	${OBJECTDIR}/InheritanceClasses.o \
 	${OBJECTDIR}/InheritanceConstructor.o \
+	${OBJECTDIR}/Namespace.o \
 	${OBJECTDIR}/OverloadedFunction.o \
 	${OBJECTDIR}/OverloadingConstructors.o \
 	${OBJECTDIR}/ParamDefaultValue.o \
@@ -134,6 +135,11 @@ ${OBJECTDIR}/InheritanceConstructor.o: InheritanceConstructor.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/InheritanceConstructor.o InheritanceConstructor.cpp
+
+${OBJECTDIR}/Namespace.o: Namespace.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Namespace.o Namespace.cpp
 
 ${OBJECTDIR}/OverloadedFunction.o: OverloadedFunction.cpp 
 	${MKDIR} -p ${OBJECTDIR}

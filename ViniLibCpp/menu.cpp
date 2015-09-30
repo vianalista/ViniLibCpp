@@ -28,6 +28,7 @@
 #include "TemplateClass.h"
 #include "TemplateSpecialization.h"
 #include "TemplateNonType.h"
+#include "Namespace.h"
 
 using namespace std;
 
@@ -108,6 +109,9 @@ void Menu(void) {
             case 22:
                 ExampleTemplateNonType();
                 break;
+            case 23:
+                ExampelNamespace();
+                break;
             case 'E':
                 cout << "Exiting ... \n";
                 sleep(2);
@@ -146,6 +150,7 @@ void ShowMenu(void) {
     cout << " [20] - Example Template Class. \n";
     cout << " [21] - Example Template Especialization. \n";  
     cout << " [22] - Example Template Non type. \n";
+    cout << " [23] - Example Namespace. \n";
     
     cout << " [E] - Exit program.\n";
     cout << "_______________________________________________________________________________\n";
