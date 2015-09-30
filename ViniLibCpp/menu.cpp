@@ -31,6 +31,7 @@
 #include "Namespace.h"
 #include "ExceptionExample.h"
 #include "TypeCasting.h"
+#include "LineControlForEasyDebug.h"
 
 using namespace std;
 
@@ -119,6 +120,9 @@ void Menu(void) {
                 break;
             case 25:
                 ExampleTypeCasting();
+                break;
+            case 26:
+                LineControlForEasyDebug();
                 break;
             case 'E':
                 cout << "Exiting ... \n";

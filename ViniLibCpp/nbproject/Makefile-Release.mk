@@ -46,6 +46,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/FriendFunctions.o \
 	${OBJECTDIR}/InheritanceClasses.o \
 	${OBJECTDIR}/InheritanceConstructor.o \
+	${OBJECTDIR}/LineControlForEasyDebug.o \
 	${OBJECTDIR}/Namespace.o \
 	${OBJECTDIR}/OverloadedFunction.o \
 	${OBJECTDIR}/OverloadingConstructors.o \
@@ -142,6 +143,11 @@ ${OBJECTDIR}/InheritanceConstructor.o: InheritanceConstructor.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/InheritanceConstructor.o InheritanceConstructor.cpp
+
+${OBJECTDIR}/LineControlForEasyDebug.o: LineControlForEasyDebug.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/LineControlForEasyDebug.o LineControlForEasyDebug.cpp
 
 ${OBJECTDIR}/Namespace.o: Namespace.cpp 
 	${MKDIR} -p ${OBJECTDIR}
