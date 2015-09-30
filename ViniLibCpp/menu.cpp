@@ -33,6 +33,7 @@
 #include "TypeCasting.h"
 #include "LineControlForEasyDebug.h"
 #include "StandardMacroNames.h"
+#include "FileStream.h"
 
 using namespace std;
 
@@ -128,6 +129,9 @@ void Menu(void) {
             case 27:
                 StandardMacroNames();
                 break;
+            case 28:
+                ExampleFileStream();
+                break;
             case 'E':
                 cout << "Exiting ... \n";
                 sleep(2);
@@ -169,7 +173,9 @@ void ShowMenu(void) {
     cout << " [23] - Example Namespace. \n";
     cout << " [24] - Example Exception. \n";
     cout << " [25] - Example cast. \n";
-    cout << " [26] - Example Standard Macro Names: Line, Time, compilation information. \n";
+    cout << " [26] - LineControlForEasyDebug. \n";
+    cout << " [27] - Example Standard Macro Names: Line, Time, compilation information. \n";
+    cout << " [28] - Example File Stream. \n";
     
     cout << " [E] - Exit program.\n";
     cout << "_______________________________________________________________________________\n";
