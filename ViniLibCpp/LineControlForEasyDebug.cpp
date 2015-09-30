@@ -10,5 +10,6 @@ void LineControlForEasyDebug(void){
     #line 10 " <><> ====> Debug 1."  // This line will not be displayed
     int num1;
     #line 12 " <><> ====> Debug 2."
-    int num2?;              // This line will be displayed: compile error mensage.
+    //uncomment the line below for to test <==================================
+    //int num2?;              // This line will be displayed: compile error mensage.
 }
