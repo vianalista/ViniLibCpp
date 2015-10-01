@@ -42,6 +42,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/Classes.o \
 	${OBJECTDIR}/ClassesDestructor.o \
 	${OBJECTDIR}/ExceptionExample.o \
+	${OBJECTDIR}/FileStream.o \
 	${OBJECTDIR}/FriendClasses.o \
 	${OBJECTDIR}/FriendFunctions.o \
 	${OBJECTDIR}/InheritanceClasses.o \
@@ -124,6 +125,11 @@ ${OBJECTDIR}/ExceptionExample.o: ExceptionExample.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ExceptionExample.o ExceptionExample.cpp
+
+${OBJECTDIR}/FileStream.o: FileStream.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/FileStream.o FileStream.cpp
 
 ${OBJECTDIR}/FriendClasses.o: FriendClasses.cpp 
 	${MKDIR} -p ${OBJECTDIR}

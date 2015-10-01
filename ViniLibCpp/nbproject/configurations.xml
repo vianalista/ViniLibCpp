@@ -11,6 +11,7 @@
       <itemPath>Classes.h</itemPath>
       <itemPath>ClassesDestructor.h</itemPath>
       <itemPath>ExceptionExample.h</itemPath>
+      <itemPath>FileStream.h</itemPath>
       <itemPath>FriendClasses.h</itemPath>
       <itemPath>FriendFunctions.h</itemPath>
       <itemPath>InheritanceClasses.h</itemPath>
@@ -43,6 +44,7 @@
       <itemPath>Classes.cpp</itemPath>
       <itemPath>ClassesDestructor.cpp</itemPath>
       <itemPath>ExceptionExample.cpp</itemPath>
+      <itemPath>FileStream.cpp</itemPath>
       <itemPath>FriendClasses.cpp</itemPath>
       <itemPath>FriendFunctions.cpp</itemPath>
       <itemPath>InheritanceClasses.cpp</itemPath>
@@ -119,6 +121,10 @@
       <item path="ExceptionExample.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ExceptionExample.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="FileStream.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="FileStream.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="FriendClasses.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -254,6 +260,10 @@
       <item path="ExceptionExample.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ExceptionExample.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="FileStream.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="FileStream.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="FriendClasses.cpp" ex="false" tool="1" flavor2="0">
       </item>
